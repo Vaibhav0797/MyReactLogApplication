@@ -22,11 +22,9 @@ class Folder2 extends Component {
       logPathArray=this.state.folderPath;
         
        var log="root";
-       
-       for(var i=0;logPathArray.length>0;i++){
+       for(var i=0;i<=logPathArray.length-1;i++){
           var temp=log+"/"+logPathArray[i];
-          log=temp
-
+          log=temp;
        }
        
         debugger
@@ -94,7 +92,7 @@ class Folder2 extends Component {
                     <div class="container">
                                      
                         <form onSubmit="return false" >
-                        <button type="button" className="btn btn-outline-light text-dark" onClick={e => { this.writeLogToDB() }} >Generate Log</button>
+                        <button type="button" className="btn btn-outline-light text-dark" style={{borderColor:"grey"}} onClick={e => { this.writeLogToDB() }} >Generate Log</button>
                     
                             <div >
                                 <li style={{
@@ -109,14 +107,16 @@ class Folder2 extends Component {
                                         <img src="https://img.icons8.com/flat_round/25/000000/arrow-right.png" />
                                     </button>
                                 </li>
-
+        
                                 <label style={{ float: "left", marginTop: "1%" }}>Root
                                 {this.state.folderPath.map(data => (
                                     <label className="path">  / {data}  </label>
                                 ))}
                                 </label>
+                                
                             </div>
-                            <br /><br />
+                            
+                            <br />
                             <table class="table">
                                 <thead >
                                     <tr>

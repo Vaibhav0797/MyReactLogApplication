@@ -7,7 +7,7 @@ import Home from "./components/home.component";
 
 function App() {
   return (<Router>
-    <div className="App" style={{marginTop:"57px", backgroundImage :`url(${flower})`,height: '600px', }}>
+    <div className="App" style={{marginTop:"57px", backgroundImage :`url(${flower})` }}>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         
         <div className="container">
