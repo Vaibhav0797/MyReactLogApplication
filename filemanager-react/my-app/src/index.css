@@ -81,7 +81,6 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 .path a {
-  /* color: #167bff; */
   color: #ffffff;
 }
 .path :hover {

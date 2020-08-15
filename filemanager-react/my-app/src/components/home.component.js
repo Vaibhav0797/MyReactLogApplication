@@ -25,6 +25,7 @@ class Folder2 extends Component {
        for(var i=0;i<=logPathArray.length-1;i++){
           var temp=log+"/"+logPathArray[i];
           log=temp;
+          debugger
        }
        
         debugger
