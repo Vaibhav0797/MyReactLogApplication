@@ -93,7 +93,7 @@ class Folder2 extends Component {
                     <div class="container">
                                      
                         <form onSubmit="return false" >
-                        <button type="button" className="btn btn-outline-light text-dark" style={{borderColor:"grey"}} onClick={e => { this.writeLogToDB() }} >Generate Log</button>
+                        <button type="button" class="button"  onClick={e => { this.writeLogToDB() }} >Generate Log</button>
                     
                             <div >
                                 <li style={{
@@ -139,13 +139,13 @@ class Folder2 extends Component {
                                                             :
                                                             <img src="https://img.icons8.com/color/25/000000/txt.png" />
                                                     }
-                                                    <button type="button" className="btn btn-outline-light text-dark" onClick={e => { this.handleClick(e, s) }}> {s.name} </button>
+                                                    <button type="button" style={{paddingBottom:"5px"}} className="button" onClick={e => { this.handleClick(e, s) }}> {s.name} </button>
 
                                                 </div>
                                             ))}
                                             {}
                                             <img src="https://img.icons8.com/color/25/000000/folder-invoices.png" />
-                                            <button type="button" onClick={e => { this.loodPriviousFolder() }} className="btn btn-outline-light text-dark">..</button>
+                                            <button type="button" onClick={e => { this.loodPriviousFolder() }} className="button">..</button>
 
                                         </td>
                                         <td>

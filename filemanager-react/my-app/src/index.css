@@ -86,3 +86,25 @@ body, html, .App, #root, .auth-wrapper {
 .path :hover {
   color: rgb(139, 185, 211);
 }
+
+.button {
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: grey;
+  background-color: white ;
+  border: none;
+  
+}
+
+.button:hover {box-shadow: 0 2px #999;}
+
+.button:active {
+  background-color: white;
+  border:white;
+}
+.button:focus {
+  outline:none;
+}
